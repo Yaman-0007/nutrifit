@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrifit - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <ul class="left">
+                <li><a href="#" class="logo">Nutrifit</a></li>
+            </ul>
+            <nav class="right">
+                <ul>
+                    <li><a href="#" class="link">Home</a></li>
+                    <li><a href="#" class="link">About</a></li>
+                    <li><a href="#" class="link">Programs</a></li>
+                    <li><a href="#" class="link">Contact</a></li>
+                    <li><a href="#" class="link">Community</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <section class="main-section">
+                <h3>Build Strength</h3>
+                <h1>Boost <span class="change_content">CONFIDENCE</span></h1>
+                <p>"Start Your Fitness Journey Today"</p>
+                <div class="buttons">
+                    <a href="programs.html" class="btn btn-primary">Learn More</a>
+                    <a href="#" class="btn btn-secondary" onclick="toggleSignupForm()">Sign Up</a>
+                </div>
+            </section>
+
+            <!-- Sign-Up Form Section -->
+            <section class="signup-form" id="signupForm">
+                <h1>Sign Up</h1>
+                <form id="signupFormElement">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="your name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="forexample@gmail.com" required>
+
+                    <label for="password">Create Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Create Password" required>
+
+                    <label for="confirm_password">Confirm Password:</label>
+                    <input type="password" id="confirm_password" name="confirm_password" placeholder="confirm password" required>
+
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </form>
+                <div id="formMessage"></div>
+            </section>
+        </main>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <img src="service1.jpg" alt="Service 1">
+                <h3>Personal Training</h3>
+                <p>Get one-on-one coaching from our expert trainers to achieve your fitness goals.</p>
+            </div>
+            <div class="service">
+                <img src="service2.jpg" alt="Service 2">
+                <h3>Group Classes</h3>
+                <p>Join our energizing group classes and work out with a community of like-minded individuals.</p>
+            </div>
+            <div class="service">
+                <img src="service3.jpg" alt="Service 3">
+                <h3>Nutrition Plans</h3>
+                <p>Customized meal plans to complement your fitness routine and boost your results.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans Section -->
+    <section id="pricing">
+        <h2>Pricing Plans</h2>
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <h3>Basic Plan</h3>
+                <p class="price">₹290/month</p>
+                <ul>
+                    <li>Access to all equipment</li>
+                    <li>One personal training session</li>
+                    <li>Group classes</li>
+                </ul>
+                <a href="#" class="btn">Join Now</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Standard Plan</h3>
+                <p class="price">₹490/month</p>
+                <ul>
+                    <li>Unlimited personal training</li>
+                    <li>Group classes</li>
+                    <li>Nutrition guidance</li>
+                </ul>
+                <a href="#" class="btn">Join Now</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Premium Plan</h3>
+                <p class="price">₹790/month</p>
+                <ul>
+                    <li>Unlimited access to all services</li>
+                    <li>Custom nutrition and workout plans</li>
+                    <li>Priority booking for trainers</li>
+                </ul>
+                <a href="#" class="btn">Join Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="path/to/your/logo.png" alt="Nutrifit Logo">
+            </div>
+            <div class="footer-social">
+                <a href="mailto:info@nutrifit.com" class="icon mail" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+1234567890" class="icon phone" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                <a href="https://www.facebook.com/nutrifit" class="icon facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/nutrifit" class="icon twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/nutrifit" class="icon instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/nutrifit" class="icon linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="footer-contact">
+                <p class="address"><i class="fas fa-map-marker-alt"></i> 123 Health St, Wellness City, HC 12345</p>
+                <p class="mail"><i class="fas fa-envelope"></i> info@nutrifit.com</p>
+                <p class="phone"><i class="fas fa-phone"></i> +1 (234) 567-890</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const words = ["CONFIDENCE", "ENDURANCE", "FOCUS", "POWER", "VITALITY", "RESILIENCE"];
+        let wordIndex = 0;
+
+        function changeWord() {
+            const changeContentElement = document.querySelector('.change_content');
+            changeContentElement.textContent = words[wordIndex];
+            wordIndex = (wordIndex + 1) % words.length;
+        }
+
+        setInterval(changeWord, 2000);  // Change word every 2 seconds
+
+        function toggleSignupForm() {
+            const signupForm = document.getElementById('signupForm');
+            signupForm.style.display = signupForm.style.display === 'block' ? 'none' : 'block';
+        }
+
+        document.getElementById('signupFormElement').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value.trim();
+            const confirmPassword = document.getElementById('confirm_password').value.trim();
+
+            const formMessage = document.getElementById('formMessage');
+
+            if (password !== confirmPassword) {
+                formMessage.textContent = "Passwords do not match!";
+                formMessage.style.color = "red";
+                return;
+            }
+
+            formMessage.textContent = "Sign-up successful!";
+            formMessage.style.color = "green";
+
+            document.getElementById('signupFormElement').reset();
+        });
+    </script>
+
+</body>
+
+</html>
